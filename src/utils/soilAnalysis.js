@@ -7,7 +7,7 @@ const HEALTH_KEY = { Good: 'good', Moderate: 'moderate', Poor: 'poor' };
 // All results come from the trained model via the Flask API.
 // No hardcoded rules – if the API is down, the user sees an error.
 export async function analyzeAndBuild(n, p, k, ph) {
-  const res = await fetch('/api/predict', {
+  const res = await fetch('https://ghufran-arain55-zameenai-backend.hf.space/api/predict', {
     method:  'POST',
     headers: { 'Content-Type': 'application/json' },
     body:    JSON.stringify({ n, p, k, ph }),
