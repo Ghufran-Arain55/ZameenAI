@@ -1,6 +1,5 @@
 {
-  "ignoreCommand": "exit 0",
-  "functions": {},
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "framework": "vite"
 }
